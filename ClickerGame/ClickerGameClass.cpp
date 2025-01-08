@@ -117,7 +117,7 @@ void ClickerGame::out() {
 
 		std::cout << Cookie << "\n\n";
 
-		std::cout << "1 - improve the click\n2 - improve passive income\n3 - stats\n4 - show your items\n5 - save\n6 - load\n";
+		std::cout << "1 - improve the click\n2 - improve passive income\n3 - stats\n4 - show your items\n5 - save\n6 - load\n\nQ & E to tap\n\nPlease use the English layout";
 		ulm.unlock();
 	}
 }	// Функция вывода основного игрового меню на экран

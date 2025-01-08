@@ -2,6 +2,7 @@
 
 void CoreClass::start() {
 	system("cls");
+	std::cout << "Please use the English layout\n\n";
 	std::cout << "1 - Play standart\t\t\t\tYour pb in this mod: " << pb_solo_standart << "\n";
 	std::cout << "2 - Your field size\t\t\t\tYour pb in this mod: " << pb_solo_custom << "\n\n";
 	std::cout << "3 - RandomPlay\t\t\t\t\tYour pb in this mod: " << pb_auto_standart << "\n";

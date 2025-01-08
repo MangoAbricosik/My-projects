@@ -31,7 +31,7 @@ void CoreClass::mainGame() {
     gravityThread = std::thread(&CoreClass::gravity, this);
     moveThread = std::thread(&CoreClass::move, this);
 
-    while (turnAllThreads) {}
+    while (turnAllThreads) { std::this_thread::sleep_for(std::chrono::milliseconds(10)); }
 
 
     // Остоновим основные потоки
@@ -42,7 +42,7 @@ void CoreClass::mainGame() {
     // Завершение
     std::this_thread::sleep_for(std::chrono::milliseconds(50));
     system("cls");
-    std::cout << "Level done\Thanks for playing\n";
+    std::cout << "Level done\nThanks for playing\n";
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
 } // Запуск основных потоков
 
